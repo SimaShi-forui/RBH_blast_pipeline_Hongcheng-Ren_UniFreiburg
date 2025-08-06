@@ -1,17 +1,1 @@
-blast_rbh_pipeline/
-├── configs.py
-├── main.py
-├── utils.py
-├── .gitignore
-├── README.md
-├── data/
-│   └── queries/
-├── results/
-│   ├── alignment/
-│   ├── finals/
-│   ├── enriched/
-│   └── tree/
-└── enrich/
-    ├── run_fasttree.py
-    ├── merge_match_results.py
-    └── summarize_final_match.py
+
