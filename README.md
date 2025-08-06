@@ -1,3 +1,4 @@
+
 # RBH-based BLAST Pipeline for Archaeal Protein Homolog Detection
 
 This repository provides a Python-based pipeline for identifying homologous proteins in archaea using reciprocal BLAST (RBH), and constructing phylogenetic trees based on sequence similarity.
@@ -26,18 +27,21 @@ This repository provides a Python-based pipeline for identifying homologous prot
 ## Repository Structure
 
 
-├── main.py # Batch process all RBH analysis
-├── configs.py # Centralized configuration
-├── utils.py # Helper functions
-├── enrich/
-│ ├── results.py
-│ ├── match.py
-│ └── fasttree.py
-├── results/ # Auto-generated results
-├── data/queries/ # Place your query .fasta files here
-├── .gitignore
-├── README.md
-└── LICENSE
+├── data/ # Data directory (input/output files)
+│ ├── output/ # BLAST and result files
+│ └── tree/ # Phylogenetic tree output files
+│
+├── scripts/ # All pipeline-related scripts
+│ ├── main.py # Main pipeline execution script
+│ ├── configs.py # Configuration and parameters
+│ ├── utils.py # Helper functions
+│ ├── match.py # Reciprocal BLAST matching
+│ ├── results.py # Post-processing and result filtering
+│ ├── fasttree.py # Tree construction with FastTree
+│ └── extract_upstream.py # Upstream region extractor from GFF
+│
+├── LICENSE # License information (MIT)
+├── README.md # Project overview and documentation
 
 
 ## Dependencies
