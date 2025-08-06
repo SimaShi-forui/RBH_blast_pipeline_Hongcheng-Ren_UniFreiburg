@@ -24,19 +24,21 @@ This repository provides a Python-based pipeline for identifying homologous prot
 ---
 
 ## Repository Structure
-.
+
+
 ├── main.py # Batch process all RBH analysis
 ├── configs.py # Centralized configuration
 ├── utils.py # Helper functions
 ├── enrich/
-│ ├── merge_match_results.py
-│ ├── summarize_final_match.py
-│ └── run_fasttree.py
+│ ├── results.py
+│ ├── match.py
+│ └── fasttree.py
 ├── results/ # Auto-generated results
 ├── data/queries/ # Place your query .fasta files here
 ├── .gitignore
 ├── README.md
 └── LICENSE
+
 
 ## Dependencies
 Biopython
@@ -55,7 +57,7 @@ pip install biopython pandas
 
 ```bash
 python main.py
-python enrich/merge_match_results.py
-python enrich/summarize_final_match.py
-python enrich/run_fasttree.py
+python results.py
+python match.py
+python fasttree.py
 
