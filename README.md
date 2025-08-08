@@ -8,7 +8,7 @@ This repository provides a Python-based pipeline for identifying homologous prot
 **Author**: Hongcheng Ren  
 **Lab**: Molecular Biology of Archaea 
 **Affiliation**: Institute for Biology II- Microbiology, University of Freiburg, Germany  
-**Contact**: simashi.orbit (at) gmail.com  
+**Contact**: hongcheng.ren@biologie.uni-freiburg.de  
 **Repository Maintainer**: [SimaShi-forui](https://github.com/SimaShi-forui)
 
 ---
